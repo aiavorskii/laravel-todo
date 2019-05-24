@@ -1,2 +1,92 @@
-// @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import "node_modules/jquery-ui/themes/base/core";
+@import "node_modules/jquery-ui/themes/base/theme";
+
+
+@import "node_modules/jquery-ui/themes/base/datepicker";
+
+body {
+
+}
+
+.navbar {
+  max-height: 51px;
+  padding: 0 15px;
+}
+
+.panel-default {
+  .panel-heading {
+    &--main {
+      background-color: $brand-primary;
+      color: $gray-lighter;
+    }
+  }
+}
+
+.btn {
+  &-todo-group {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    background: #e8e8e8;
+    color: #000;
+  }
+}
+
+
+.todo-brand {
+  font-size: 18px;
+  line-height: 20px;
+  float: left;
+  padding: 15px 0;
+  height: 50px;
+  color: $navbar-default-brand-color;
+  &:hover,
+  &:focus {
+    color: $navbar-default-brand-hover-color;
+    background-color: $navbar-default-brand-hover-bg;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  height: calc(100vh - 51px);
+}
+
+.sidebar {
+  max-width: 25%;
+  flex: 0 0 25%;
+  margin-bottom: 0;
+//  background: $brand-primary;
+//  color: $gray-lighter;
+//  padding: 10px 20px;
+}
+
+.todo-list {
+  .list-group-item {
+    padding: 0;
+    background-color: inherit;
+    a {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 15px;
+      //color: $gray-lighter;
+    }
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.content {
+  max-width: 75%;
+  flex: 0 0 75%;
+  margin-bottom: 0;
+}
+
+textarea {
+  resize: none;
+}
 
